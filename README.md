@@ -10,6 +10,18 @@ This helps that administorator discovers host using fragilitas language version 
 This supports ruby, php, python, golang by default.
 By making json file under config direcoty, you can add other language version info to metadata.  
 
+## Example output
+```
+ruby main.rb
+#=> "[{\"ruby\":\"2.3.0p0\"},{\"php\":\"5.6.30\"},{\"python\":\"2.7.13\"},{\"golang\":\"1.8.2\"}]"
+```
+
+or you can filter
+```
+ruby main.rb ruby php
+#=> "[{\"ruby\":\"2.3.0p0\"},{\"php\":\"5.6.30\"}]"
+```
+
 ## Example of json file
 
 ```
@@ -30,14 +42,5 @@ perser value must be regular expression that have to capture you want to registe
 ```
 [plugin.metadata.language_version]
 command = "ruby /path/to/mackerel-metadata-plugin-language-version/main.rb"
-execution_interval = 60
-```
-
-or 
-
-ruby and php only.
-```
-[plugin.metadata.language_version]
-command = "ruby /path/to/mackerel-metadata-plugin-language-version/main.rb ruby php"
 execution_interval = 60
 ```
