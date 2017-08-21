@@ -1,0 +1,14 @@
+{
+	"ruby": {
+		"version": "ruby -v",
+		"parser": "ruby\\s(.*?)\\s"
+	},
+	"php": {
+		"version": "php -v",
+		"parser": "PHP\\s(.*?)\\s"
+	},
+  "python": {
+		"version": "python --version",
+		"parser": "Python\\s(.*)"
+  }
+}

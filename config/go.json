@@ -1,0 +1,6 @@
+{
+  "golang": {
+    "version": "go version",
+    "parser": "go\\sversion\\sgo(.*?)\\s"
+  }
+}
