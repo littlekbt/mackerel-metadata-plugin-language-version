@@ -9,7 +9,7 @@ This plugin collects programming language version on host.
 mackerel-metadata-plugin-language-version plugin collects programming language version on host.  
 This helps that administorator discovers host using fragilitas language version or EoL language version.  
 
-This supports ruby, php, python, golang by default.
+This supports ruby, php, python, golang by default.  
 By making json file under config direcoty, you can add other language version info to metadata json.  
 
 ## Example output
