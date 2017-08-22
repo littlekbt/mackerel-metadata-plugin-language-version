@@ -1,6 +1,6 @@
 language: 
   - ruby
-  - php
 rvm: 2.3.0
-php: 5.6.30
+before_script:
+  - sudo add-apt-repository ppa:ondrej/php && sudo apt-get update && sudo apt-get upgrade && sudo apt-get install php5.6
 script: ruby test_language_versions.rb
