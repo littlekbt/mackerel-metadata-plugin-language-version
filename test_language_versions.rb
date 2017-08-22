@@ -4,7 +4,7 @@ require './language_versions'
 
 class TestLanguageVersions < Test::Unit::TestCase
   def test_fetch
-    expect = JSON.parse(File.read('./test/data.json'))
+    expect = JSON.parse(File.read(ENV['TRAVIS'] == '1' ? './test/travis_data.json' : './test/data.json'))
 
     actual = LanguageVersions.fetch()
     assert_equal(expect, actual)
