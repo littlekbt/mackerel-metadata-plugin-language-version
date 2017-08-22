@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/littlekbt/mackerel-metadata-plugin-language-version.svg?branch=master)](https://travis-ci.org/littlekbt/mackerel-metadata-plugin-language-version)
+
 # mackerel-metadata-plugin-language-version
 
 mackerel-metadata-plugin-language-version is mackerel metadata plugin.  
