@@ -10,15 +10,16 @@ mackerel-metadata-plugin-language-version plugin collects programming language v
 This helps that administorator discovers host using fragilitas language version or EoL language version.  
 
 This supports ruby, php, python, golang by default.
-By making json file under config direcoty, you can add other language version info to metadata.  
+By making json file under config direcoty, you can add other language version info to metadata json.  
 
 ## Example output
+default supports ruby, php, python, golang
 ```
 ruby main.rb
 #=> "[{\"ruby\":\"2.3.0p0\"},{\"php\":\"5.6.30\"},{\"python\":\"2.7.13\"},{\"golang\":\"1.8.2\"}]"
 ```
 
-or you can filter
+you can filter
 ```
 ruby main.rb ruby php
 #=> "[{\"ruby\":\"2.3.0p0\"},{\"php\":\"5.6.30\"}]"
@@ -35,8 +36,8 @@ ruby main.rb ruby php
 }
 ```
 
-version value must be command that output language version.  
-perser value must be regular expression that have to capture you want to register metadata.
+Value of version key must be command that output language version.  
+Value of perser key must be regular expression that have to capture you want to register metadata.  
 (regular exporession is interpreted by ruby)
 
 ## Example of mackerel-agent.conf
