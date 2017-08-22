@@ -1,6 +1,5 @@
 require 'json'
 require 'pathname'
-require 'json'
 
 class LanguageVersions
   class << self
